@@ -5,8 +5,8 @@ import androidx.lifecycle.viewModelScope
 import com.diaryappcompose.utils.Constants.APP_ID
 import io.realm.kotlin.mongodb.App
 import io.realm.kotlin.mongodb.Credentials
-import io.realm.kotlin.mongodb.GoogleAuthType
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -15,7 +15,10 @@ import kotlinx.coroutines.withContext
 
 class AuthenticationViewModel : ViewModel() {
 
-    private var _loadingState = MutableStateFlow(LoadingState())
+    private var _authenticated = MutableStateFlow(AuthenticationState())
+    var authenticated = _authenticated.asStateFlow()
+
+    private var _loadingState = MutableStateFlow(AuthenticationState())
     var loadingState = _loadingState.asStateFlow()
 
     fun setLoading(loadingState: Boolean) {
@@ -24,18 +27,22 @@ class AuthenticationViewModel : ViewModel() {
 
     fun signInWithMongoAtlas(
         tokenId: String,
-        onSuccess: (Boolean) -> Unit,
+        onSuccess: () -> Unit,
         onError: (Exception) -> Unit,
     ) {
         viewModelScope.launch {
             try {
                 val result = withContext(Dispatchers.IO) {
                     App.create(APP_ID).login(
-                        Credentials.google(tokenId, GoogleAuthType.ID_TOKEN)
+                        Credentials.jwt(tokenId)
                     ).loggedIn
                 }
                 withContext(Dispatchers.Main) {
-                    onSuccess(result)
+                    if (result) {
+                        onSuccess()
+                        delay(600)
+                        _authenticated.update { it.copy(authenticated = true) }
+                    }
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
@@ -46,6 +53,7 @@ class AuthenticationViewModel : ViewModel() {
     }
 }
 
-data class LoadingState(
-    val loadingState: Boolean = false
+data class AuthenticationState(
+    val loadingState: Boolean = false,
+    val authenticated: Boolean = false,
 )

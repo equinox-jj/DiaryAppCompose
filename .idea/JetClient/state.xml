@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="folders">
+            <list>
+              <folderState>
+                <option name="description" value="/training_android/public/api/ecommerce/" />
+                <option name="id" value="0e7ab21b-422e-440b-bcd7-d6ba412f5337" />
+                <option name="name" value="Apps Ecommerce" />
+                <option name="requests">
+                  <list>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="formData">
+                            <list>
+                              <formDataParameterState>
+                                <option name="key" value="name" />
+                                <option name="value" value="Ade Fajar Rivanto" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="email" />
+                                <option name="value" value="adefajarrivanto@gmail.com" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="password" />
+                                <option name="value" value="ade1234" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="phone" />
+                                <option name="value" value="083872175056" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="description" value="0 = male, 1 = female" />
+                                <option name="key" value="gender" />
+                                <option name="value" value="0" />
+                              </formDataParameterState>
+                            </list>
+                          </option>
+                          <option name="type" value="FORM_DATA" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/registration" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="13b7d53e-e376-4112-9bce-761359151537" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Register" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/registration" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="formData">
+                            <list>
+                              <formDataParameterState>
+                                <option name="key" value="email" />
+                                <option name="value" value="adefajarrivanto@gmail.com" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="password" />
+                                <option name="value" value="123456" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="token_fcm" />
+                                <option name="value" value="123" />
+                              </formDataParameterState>
+                            </list>
+                          </option>
+                          <option name="type" value="FORM_DATA" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/authentication" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="multipart/form-data" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="9646801a-3880-4047-9556-330f93832859" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Login" />
+                      <option name="url" value="https://portlan.id/training_android/public/api/ecommerce/authentication" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#13;&#10;    &quot;password&quot;: &quot;ade1234&quot;,&#13;&#10;    &quot;new_password&quot;: &quot;123456&quot;,&#13;&#10;    &quot;confirm_password&quot;: &quot;123456&quot;&#13;&#10;}" />
+                          <option name="type" value="PLAIN" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/change-password/3" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6IjljelZhdnEwc3dzNWJnd1pWM1EyTUxWTVB6NWdiV0QxIiwiaWF0IjoxNjcyNzMzMTc3LCJleHAiOjE2NzI3MzY3Nzd9.UPpn_yzFMbacCD4DFHBjLMzOorR6uXtgIhnyH2sPBdw" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="4e88e0b0-7985-4b61-b1ea-c75b6ce051b0" />
+                      <option name="method" value="PUT" />
+                      <option name="name" value="Change Password" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/change-password/3" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="formData">
+                            <list>
+                              <formDataParameterState>
+                                <option name="key" value="id" />
+                                <option name="value" value="3" />
+                              </formDataParameterState>
+                            </list>
+                          </option>
+                          <option name="type" value="FORM_DATA" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/change-image" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6IjV5TFRHdWNpZmllaFNkV0oySDJaeEZ6UkdFUE5PcjlDIiwiaWF0IjoxNjcyNzMzMzUxLCJleHAiOjE2NzI3MzY5NTF9.h4R5ixDTOWArdrjJJyS6-wo2qvGCSsJS5eXwHVecvnw" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="94b2a587-c7a5-405d-9c93-393fb064570a" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Change Image" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/change-image" />
+                    </requestState>
+                    <requestState>
+                      <option name="description" value="/training_android/public/api/ecommerce/get_list_product" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOiIzIiwicmFuZG9tIjoidGxKaElDYklOenJxMmQ4WUk0RnZjd1pjdURFdmJLTWUiLCJpYXQiOjE2NzI3OTkwOTksImV4cCI6MTY3Mjc5OTE1OX0.vvmMXmlr0Ei7WYgKbztDZ2wsovvMJgYuZaST7uCVZJM" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="4febe483-17e8-4e3c-8c78-0bf2ed6cee8c" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="Get List Data Product" />
+                      <option name="queryParams">
+                        <list>
+                          <queryParamState>
+                            <option name="key" value="search" />
+                            <option name="value" value="laptop" />
+                          </queryParamState>
+                        </list>
+                      </option>
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/get_list_product?search=laptop" />
+                    </requestState>
+                    <requestState>
+                      <option name="description" value="/training_android/public/api/ecommerce/get_detail_product" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6IndPUXJnOHdQdDVsOHM1UHUxTWlXVWM5WXQ1aGlKVDhQIiwiaWF0IjoxNjcyNzM4NzcxLCJleHAiOjE2NzI3NDIzNzF9.DtbkQrvmBM22TNDfyXF1kzOR0h5BIpnSOD9fPVSm524" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="9259892d-57f7-4422-9055-34c55bd254d2" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="Get Detail Product" />
+                      <option name="queryParams">
+                        <list>
+                          <queryParamState>
+                            <option name="key" value="id_product" />
+                            <option name="value" value="1" />
+                          </queryParamState>
+                        </list>
+                      </option>
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/get_detail_product?id_product=1" />
+                    </requestState>
+                    <requestState>
+                      <option name="description" value="/training_android/public/api/ecommerce/get_list_product_favorite" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6IndPUXJnOHdQdDVsOHM1UHUxTWlXVWM5WXQ1aGlKVDhQIiwiaWF0IjoxNjcyNzM4NzcxLCJleHAiOjE2NzI3NDIzNzF9.DtbkQrvmBM22TNDfyXF1kzOR0h5BIpnSOD9fPVSm524" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="a4da6e90-1ae3-49ea-b904-1ae0059ee50d" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="Get List Data Product Favorite" />
+                      <option name="queryParams">
+                        <list>
+                          <queryParamState>
+                            <option name="key" value="search" />
+                            <option name="value" value="" />
+                          </queryParamState>
+                          <queryParamState>
+                            <option name="key" value="id_user" />
+                            <option name="value" value="3" />
+                          </queryParamState>
+                        </list>
+                      </option>
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/get_list_product_favorite?search=&amp;id_user=3" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="formData">
+                            <list>
+                              <formDataParameterState>
+                                <option name="key" value="id_product" />
+                                <option name="value" value="1" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="id_user" />
+                                <option name="value" value="3" />
+                              </formDataParameterState>
+                            </list>
+                          </option>
+                          <option name="type" value="FORM_DATA" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/add_favorite" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6IndPUXJnOHdQdDVsOHM1UHUxTWlXVWM5WXQ1aGlKVDhQIiwiaWF0IjoxNjcyNzM4NzcxLCJleHAiOjE2NzI3NDIzNzF9.DtbkQrvmBM22TNDfyXF1kzOR0h5BIpnSOD9fPVSm524" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="3995890b-ca08-4f1d-b413-e3d9673b1729" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Add Favorite" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/add_favorite" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#13;&#10;    &quot;rate&quot;: &quot;1&quot;&#13;&#10;}" />
+                          <option name="type" value="PLAIN" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/update_rate/1" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6IndPUXJnOHdQdDVsOHM1UHUxTWlXVWM5WXQ1aGlKVDhQIiwiaWF0IjoxNjcyNzM4NzcxLCJleHAiOjE2NzI3NDIzNzF9.DtbkQrvmBM22TNDfyXF1kzOR0h5BIpnSOD9fPVSm524" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="817c5f93-6788-4413-ab4f-af0d4253f750" />
+                      <option name="method" value="PUT" />
+                      <option name="name" value="Update Rate" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/update_rate/1" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#13;&#10;    &quot;data_stock&quot;: [&#13;&#10;        {&#13;&#10;            &quot;id_product&quot;: &quot;1&quot;,&#13;&#10;            &quot;stock&quot;: 5&#13;&#10;        },&#13;&#10;        {&#13;&#10;            &quot;id_product&quot;: &quot;10&quot;,&#13;&#10;            &quot;stock&quot;: 2&#13;&#10;        }&#13;&#10;    ]       &#13;&#10;}" />
+                          <option name="type" value="PLAIN" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/update-stock" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Content-Type" />
+                            <option name="value" value="application/json" />
+                          </headerState>
+                          <headerState>
+                            <option name="key" value="Authorization" />
+                            <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6Ilk4WTVjbmNMa0I1MFU3dFJycjBvQmZUcThSV281MDNVIiwiaWF0IjoxNjcyNzQyNDg0LCJleHAiOjE2NzI3NDYwODR9.NdT5lWf6jB_9p-TYU9n7Ce1-2wPPZJTriBN2Kpi39Qg" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="c7fc7c6a-97d0-46c2-be42-8941eaf8baca" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Update Stock" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/update-stock" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="formData">
+                            <list>
+                              <formDataParameterState>
+                                <option name="key" value="id_user" />
+                                <option name="value" value="3" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="access_token" />
+                                <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOjMsInJhbmRvbSI6ImhKS21udnRoN2ROVXNPRTdWM3VUaFpRQ2VaMDhhQ0R1IiwiaWF0IjoxNjcyODIzMDQxLCJleHAiOjE2NzI4MjMxMDF9.EPpiaOcXjAyuByO3d7CpaSMPekjAvL2zsUPtuGzg6vw" />
+                              </formDataParameterState>
+                              <formDataParameterState>
+                                <option name="key" value="refresh_token" />
+                                <option name="value" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsdW1lbi1qd3QiLCJzdWIiOiJleUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcGMzTWlPaUpzZFcxbGJpMXFkM1FpTENKemRXSWlPak1zSW5KaGJtUnZiU0k2SW1oS1MyMXVkblJvTjJST1ZYTlBSVGRXTTNWVWFGcFJRMlZhTURoaFEwUjFJaXdpYVdGMElqb3hOamN5T0RJek1EUXhMQ0psZUhBaU9qRTJOekk0TWpNeE1ERjkuRVBwaWFPY1hqQXl1QnlPM2Q3Q3BhU01QZWtqQXZMMnpzVVB0dUd6ZzZ2dyIsInJhbmRvbSI6ImhKS21udnRoN2ROVXNPRTdWM3VUaFpRQ2VaMDhhQ0R1IiwiaWF0IjoxNjcyODIzMDQxLCJleHAiOjE2NzI4MjMxNjF9.kmBAx83KwY-36d5Z6tj8hsJiIUWPNQ9mtwK67BP4EVU" />
+                              </formDataParameterState>
+                            </list>
+                          </option>
+                          <option name="type" value="FORM_DATA" />
+                        </bodyState>
+                      </option>
+                      <option name="description" value="/training_android/public/api/ecommerce/refresh-token" />
+                      <option name="headers">
+                        <list>
+                          <headerState>
+                            <option name="key" value="apikey" />
+                            <option name="value" value="TuIBt77u7tZHi8n7WqUC" />
+                          </headerState>
+                        </list>
+                      </option>
+                      <option name="id" value="4582371c-e31b-4ec4-92b1-9abd0360f970" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="Refresh Token" />
+                      <option name="url" value="http://localhost/training_android/public/api/ecommerce/refresh-token" />
+                    </requestState>
+                  </list>
+                </option>
+                <option name="sortWeight" value="1000000" />
+              </folderState>
+            </list>
+          </option>
+          <option name="id" value="8e475603-09e0-4ede-af4e-26dad3b715d8" />
+          <option name="name" value="Training Android Batch 2" />
+          <option name="sortWeight" value="1000000" />
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="folderPath" value="$USER_HOME$/Downloads" />
+            </synchronizationPropertiesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="e25c78bd-6407-4a52-9efb-fd28fe1fb3e3" />
+  </component>
+</project>

@@ -8,6 +8,8 @@ import androidx.navigation.compose.rememberNavController
 import com.diaryappcompose.navigation.Destination
 import com.diaryappcompose.navigation.SetupNavGraph
 import com.diaryappcompose.ui.theme.DiaryAppComposeTheme
+import com.diaryappcompose.utils.Constants.APP_ID
+import io.realm.kotlin.mongodb.App
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,10 +20,16 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
 
                 SetupNavGraph(
-                    startDestination = Destination.Authentication.route,
+                    startDestination = getStartDestination(),
                     navController = navController
                 )
             }
         }
     }
+}
+
+private fun getStartDestination(): String {
+    val user = App.create(APP_ID).currentUser
+    return if (user != null && user.loggedIn) Destination.Home.route
+    else Destination.Authentication.route
 }
